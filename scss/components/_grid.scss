@@ -1,0 +1,124 @@
+$grid-col-4:              25%;
+$grid-col-3:              33.33%;
+$grid-col-5:              20%;
+$grid-col-2:              50%;
+
+$grid-10:                 5px;
+$grid-30:                 15px;
+$grid-50:                 25px;
+$grid-80:                 40px;
+$grid-90:                 45px;
+
+$grid-item-vertical:      30px;
+
+$block-2-5:               40%;
+$block-3-5:               60%;
+
+.grid-10 {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -5px;
+}
+
+.grid-30 {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.grid-50 {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -25px;
+  align-items: center;
+  &.above-footer {
+  	align-items: flex-start;
+  	padding-top: 80px;
+  }
+}
+
+.grid-80 {
+	display: flex;
+  flex-wrap: wrap;
+  margin: 0 -40px;
+}
+
+.grid-90 {
+	display: flex;
+  flex-wrap: wrap;
+  margin: 0 -45px;
+  align-items: center;
+  padding: 140px 0;
+}
+
+.grid-10 > .grid-item {
+	padding: 0 $grid-10;
+	margin: 0;
+}
+
+.grid-50 > .grid-item {
+	padding: 0 $grid-50;
+	margin: 0;
+}
+
+.grid-90 > .grid-item {
+	padding: 0 $grid-90;
+	margin: 0;
+}
+
+.grid-80 > .grid-item {
+	padding: 0 $grid-80;
+}
+
+.grid-30 > .grid-item {
+	padding: 0 $grid-30;
+}
+
+.grid-col-5 > .grid-item {
+	width: $grid-col-5;
+}
+
+.grid-col-4 > .grid-item {
+	width: $grid-col-4;
+}
+
+.grid-col-3 > .grid-item {
+	width: $grid-col-3;
+}
+
+.grid-col-2 > .grid-item {
+	width: $grid-col-2
+}
+
+.block5 > .block-2-5 {
+	width: $block-2-5;
+	max-height: 616px;
+	margin-bottom: 0;
+}
+
+.block5 > .block-3-5 {
+	width: $block-3-5;
+}
+
+.grid-30.projects {
+	padding: 40px 0;
+}
+
+
+
+.grid-item.introduction {
+	padding-top: 89px;
+	padding-bottom: 80px;
+}
+
+.grid-item.vertical {
+  margin-top: $grid-item-vertical;
+}
+
+.grid-30.mobile {
+	padding-top: 80px;
+	align-items: center;
+}
+
+
+

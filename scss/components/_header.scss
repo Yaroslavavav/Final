@@ -1,0 +1,48 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 40px;
+  &-left {
+    margin-right: 10px;
+  }
+}
+
+.logo-icon {
+	display: flex;
+	align-items: center;
+	font-size: $global-xlarge-font-size;
+	font-family: $global-font-title;
+}
+
+.logo-icon>img {
+	width: 64px;
+  height: 56px;
+}
+
+.hero-desc {
+	text-align: center;
+}
+
+.heading-h2 {
+	margin-bottom: 14px;
+}
+
+.heading-h1.hero {
+	margin-bottom: 20px;
+}
+
+.hero-desc {
+	padding-top: 285px;
+	padding-bottom: 380px;
+}
+
+.hero-text {
+	margin: 0 auto;
+	max-width: 560px;
+	font-size: $global-font-size;
+	color: $global-primary-color;
+	font-family: $global-font-family;
+	padding-bottom: 52px;
+}
+

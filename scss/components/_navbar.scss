@@ -1,0 +1,78 @@
+$navbar-color:              $global-primary-color;
+$navbar-font-size:          $global-small-font-size;
+$navbar-background:         transparent;    
+$navbar-border:             3px solid transparent;
+
+$navbar-hover-color:        $global-emphasis-color;  
+
+.nav {
+  display: flex;
+  &-navbar {
+    margin:0 -15px;
+    list-style: none;
+    li {
+      display: inline-block;
+      padding: 0 15px;
+      a {
+        display: inline-block;
+        background: $navbar-background;
+        color: $navbar-color;
+        font-size: $navbar-font-size;
+        text-decoration: none;
+        &:hover {
+          color: $navbar-hover-color;
+        }
+      }
+    }
+    li.active {
+      a {
+        color: $navbar-hover-color;
+      }
+    }
+  }
+  &-toggle{
+    display: block;  
+  }
+  &-nav-mobile {
+    display: block;
+  }
+
+
+  @media (min-width: $breakpoint-medium){
+    &-nav {
+      display: flex;  
+    }
+    &-toggle{
+      display: none;  
+    }
+    &-nav-mobile {
+      display: none;
+    }
+  }
+
+}
+
+.utilities {
+  &-navbar {
+    margin: 0;
+    list-style: none;
+    li {
+      display: inline-block;
+      margin-left: 30px;
+      a {
+        display: inline-block;
+        background: $navbar-background;
+        color: $navbar-color;
+        font-size: $navbar-font-size;
+        text-decoration: none;
+        &:hover {
+          color: $navbar-hover-color;
+        }
+      }
+    }
+  }
+}
+
+.projects-nav {
+  text-align: center;
+}
